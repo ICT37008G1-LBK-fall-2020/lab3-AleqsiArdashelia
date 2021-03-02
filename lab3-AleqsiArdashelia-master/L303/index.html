@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 1/3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <script>
+      var str = prompt('შეიყვანეტ ვალუტა და რაოდენობა მაგ. 5L, 5$ ...', ''), n = parseFloat(str);
+      
+      if (str.indexOf("L") == -1) {alert('L' + (n * 2.6))};
+      if (str.indexOf("$") == -1) {alert('$' + (n / 2.6))};
+    </script>
+  </body>
+</html>

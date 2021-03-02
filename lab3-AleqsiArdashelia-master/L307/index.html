@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 1/3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <script>
+      var n = prompt('რამდენი სახელი შეყვანა გსურთ?'), names = [ ];
+      for(var i = 0; i < n; i++){
+       var name = prompt('სახელი:')
+       names.push(name);
+      }
+      var n2 = prompt('რამდენი სახელი შეყვანა გსურთ?'), names2 = [ ];
+      for(var i = 0; i < n2; i++){
+       var name2 = prompt('სახელი:')
+       names2.push(name2);
+      }
+      var namescombo = []; 
+      for(var i = 0; i < names.length; i++){
+        if(namescombo.indexOf(names[i]) == -1)
+        namescombo.push(names[i])
+      };
+      for(var i = 0; i< names2.length; i++){
+        if(namescombo.indexOf(names2[i]) == -1)
+        namescombo.push(names2[i])
+      }
+      alert(namescombo)
+    </script>
+  </body>
+</html>
